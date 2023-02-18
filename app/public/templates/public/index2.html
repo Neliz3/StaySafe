@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>Projects</h1>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Url</th>
+                <th>Description</th>
+                <th>Number</th>
+                <th>Mono</th>
+                <th>Privat</th>
+            </tr>
+            {% for item in values %}
+                <tr>
+                    <td>{{item.name_project}}</td>
+                    <td><img src="{{item.url}}"></td>
+                    <td>{{item.text}}</td>
+                    <td>{{item.number}}</td>
+                    <td>{{item.mono}}</td>
+                    <td>{{item.privat}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    <a href="/payment?bank=mono">Pay through monobank</a>
+      </form>
+    <br>
+    <a href="/payment?bank=privat">Pay through privat</a>
+    </body>
+</html>

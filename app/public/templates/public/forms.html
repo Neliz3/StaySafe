@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Forms</title>
 </head>
 <body>
-
+    <form action="#" method="post">
+        <p><input type="text" name="name" placeholder="Enter a name"
+                  value="{{name if name}}"/></p>
+        <p><input type="tel" name="phone" placeholder="Enter a phone"
+                  value="{{phone if phone}}"/></p>
+        <p><input type="email" name="email" placeholder="Enter email"
+                  value="{{email if email}}"/></p>
+        <p><input type="text" name="text" placeholder="Enter a text" /></p>
+        <p><input type="submit" value="submit"/></p>
+    </form>
 </body>
 </html>
