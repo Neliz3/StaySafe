@@ -9,4 +9,4 @@ def home():
     if request.method == "POST":
         pass
     else:
-        return render_template("public/index.html", values=CreateWidget.query.all())
+        return render_template("public/index2.html", values=CreateWidget.query.all())
